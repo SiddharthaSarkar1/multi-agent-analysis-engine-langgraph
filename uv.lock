@@ -1,0 +1,8 @@
+version = 1
+revision = 2
+requires-python = ">=3.14"
+
+[[package]]
+name = "intelligent-platform-multi-agent-research-system"
+version = "0.1.0"
+source = { virtual = "." }
