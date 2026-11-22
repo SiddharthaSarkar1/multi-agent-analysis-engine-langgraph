@@ -29,7 +29,7 @@ llm2 = ChatOllama(
 )
 
 llm3 = ChatOllama(
-    model="llama3.2:3b", 
+    model="gemma4:latest", 
     temperature=0.2, 
     max_retries=2, 
     base_url=ollama_remote_base_url
@@ -77,7 +77,7 @@ Return the report using these sections:
 
 
 pricing_intelligence_agent = create_agent(
-    model=llm2,
+    model=llm3,
     tools=[web_search_tavily, web_search_ddgs],
     system_prompt=SYSTEM_PROMPT,
     name="pricing_intelligence_agent"

@@ -23,7 +23,7 @@ llm2 = ChatOllama(
 )
 
 llm3 = ChatOllama(
-    model="llama3.2:3b", temperature=0.2, max_retries=2, base_url=ollama_remote_base_url
+    model="gemma4:latest", temperature=0.2, max_retries=2, base_url=ollama_remote_base_url
 )
 
 SYSTEM_PROMPT = """
@@ -66,7 +66,7 @@ Return your final analysis using these sections:
 8. Sources
 """
 product_analysis_agent = create_agent(
-    llm=llm2,
+    model=llm3,
     tools=[web_search_tavily, web_search_ddgs],
     system_prompt=SYSTEM_PROMPT,
     name="product_analysis_agent",
