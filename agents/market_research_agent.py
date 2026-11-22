@@ -54,7 +54,7 @@ Your tasks:
 
 Instructions:
 
-- Use the web_search tool for current information.
+- Use the web_search_tanily and web_search_ddgs tool for current information.
 - Search using specific and meaningful queries.
 - Never invent facts, statistics or market figures.
 - Clearly identify missing information.
