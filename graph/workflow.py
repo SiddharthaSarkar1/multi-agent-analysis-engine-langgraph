@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from langgraph.graph import StateGraph, START, END
-from state import CompetitorIntelligentState
+from .state import CompetitorIntelligentState
 
 from agents.market_research_agent import run_market_research
 from agents.product_analysis_agent import run_product_analysis
